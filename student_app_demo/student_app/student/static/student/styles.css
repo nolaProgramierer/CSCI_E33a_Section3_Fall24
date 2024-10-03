@@ -1,0 +1,111 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    height: 75px;
+    background-color: beige;
+    align-items: center;
+    border: 1px black solid;
+}
+#logo {
+    margin-right: auto;
+    font-size: 36px;
+}
+
+/* Index page */
+.student-index-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.student-index-container:nth-child(odd) {
+    background-color: lightgray;
+}
+.student-vitals-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.student-courses-container {
+    display: flex;
+    flex-direction: column;
+}
+.id-container {
+    justify-self: start;
+}
+
+/* Forms */
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    max-width: 500px;
+    margin: auto;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+.course-description {
+    width: 400px;
+}
+#course-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 1em;
+}
+
+/* Messages */
+.messages {
+    margin: 20px 0;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-error, .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+
